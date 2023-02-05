@@ -11,33 +11,33 @@ const companies = [
 
 const ages = [33,12,43,13,45,21,46,52,78,11,44,23,22,44];
 
-// for(let i = 0; i < companies.length; i++) {
-//     console.log(companies[i]);
-// }
+for(let i = 0; i < companies.length; i++) {
+    console.log(companies[i]);
+}
 
-// forEach - Метод forEach() выполняет указанную функцию один раз для каждого элемента в массиве.
-// companies.forEach(function(company) {
-//     console.log(company);
-// })
+forEach - Метод forEach() выполняет указанную функцию один раз для каждого элемента в массиве.
+companies.forEach(function(company) {
+    console.log(company);
+})
 
 
-// filter - Метод filter() создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции
-//  Get 21 and older
+filter - Метод filter() создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции
+ Get 21 and older
 
-// by for method;
-// let canDrink = [];
-// for(let i = 0; i < ages.length; i++) {
-//     if(ages[i] >= 21) {
-//         canDrink.push(ages[i]);
-//     }
-// }
+by for method;
+let canDrink = [];
+for(let i = 0; i < ages.length; i++) {
+    if(ages[i] >= 21) {
+        canDrink.push(ages[i]);
+    }
+}
 
-// by filter method;
-    // const canDrink = ages.filter(function(age){
-    //     if(age >= 21) {
-    //         return true;
-    //     }
-    // })
+by filter method;
+    const canDrink = ages.filter(function(age){
+        if(age >= 21) {
+            return true;
+        }
+    })
     
     const canDrink = ages.filter(age => age >= 21);
 
